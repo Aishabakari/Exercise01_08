@@ -10,12 +10,12 @@ public class PerfectSquare {
     
     public static boolean isPerfectSquare(int num) {
         for (int i = 1; i * i <= num; i++) {
-            if (i * i == num) { // Check if i squared equals num
-                return true; // A perfect square is found
+            if (i * i == num) { // check  i squared equals num
+                return true; // perfect square found
             } else if (i * i > num) {
-                return false; // i squared exceeds num, so it's not a perfect square
+                return false; // i squared more than num not a perfect square
             }
         }
-        return false; // Return false if no perfect square is found
+        return false; // return false if no perfect square
     }
 }
